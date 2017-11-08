@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Deployment Diagram</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class=col-sm-12>
+                <h1>Deployment Diagram</h1>
+            </div>
+            <div class="col-sm-5">
+                <h1>คือ</h1>
+                <p>มันจะบอกว่าโปรแกรมที่เราทำ มันใช้อะไรในการทำงาน</p>
+                <p>ในโลกของความเป็นจริง พวกตัว server อะไร os อะไร cpu network อะไร ramอะไร</p>
+            </div>
+            <div class=col-sm-7>
+                <h1>วิธีเขียน</h1>
+                <p>จะมีสัญลัก</p>
+                <ul>
+                    <li>กล่องสี่เหลี่ยม แล้วบอกว่ามันใช้อะไร</li>
+                </ul>
+                <h3>ตัวอย่าง</h3>
+                <a href="./img/1.JPG"><img src="./img/1.JPG" width="200"  alt=""></a>
+            </div>
+            <div class="col-sm-5">
+                <h1>hit</h1>
+                <li>waterfail มันจะเหมือนการสร้างบ้าน ทำรอบเดียว จะเจอปัญหาว่า software ที่ทำมาใช้ไม่ได้<br>
+                แต่ก็แค่เหมือนกับว่าจะใช้ได้ แต่มันแค่กระดาษแต่พอทำเป็น โปรแกรมจริงๆพัง จึงเกิด SDLC</li>
+                <li>SDLC ทำหลายๆรอบ ให้ user เห็นความก้าวหน้า มีหลายอันหลายวิธี แต่ยกตัวอย่าง 
+                    Agile หลักการคือ <a href="http://agilemanifesto.org/iso/th/manifesto.html">Agile mandifesto</a>
+                    (แปลว่า ว่องไว)</li>
+                <li>SDLC ก็ยังมี <a href="https://www.scrumalliance.org/">Scrum</a>  </li>
+                <li>การ mock คือการทำให้ user เห็นภาพสิ่งที่เค้าต้องการ พวก pototype wirframe</li>
+            </div>
+            <div class="col-sm-7">
+                <h1>Scrum ทำหลายรอบ แต่ละรอบได้ Software ที่ใช้งานได้จริง</h1>
+                <li>Product owner เข้าของ Product คือ คนที่รู้ความต้องการของ user ว่าเค้าอยากได้อะไร แล้ว list เป็นข้อๆ
+                     ว่าต้องการให้ระบบมันทำอะไรได้บ้าง โดยจัดลำดับความสำคัญของ list ได้ด้วย list นั้น คือ Product backlog</li>
+                <li>Product backlog</li>
+                <li>Sprint planning จะมี sprint backlog(แตกเป็นงานย่อยๆ จาก product backlog แตกจาก list 1ข้อนั้นๆ) และต้องบอกได้ด้วยว่า แต่ละข้อต้องใช้เวลาเท่าไหร่</li>
+                <li>แล้วก็ลงมือทำ จะเกิดการประชุม อะไรทำมากทำน้อยประมานเวลาอะไรใช้เวลาเท่าไหร่ แต่จังหว่ะลงมือทำจะเกิด Dary scrum meeting </li>
+                <li>Dary scrum meeting คือ ประชุมทุกวัน จะมีคนอยู่ 1 คนชื่อ Scrum master เป็น โคช์ คอยให้คำแนะนำแก้ใขปัญหา(มันประชุมเพื่อถามว่าเมื่อวานทำอะไรไป ติดปัญหาอะไรหรือเปล่า และพรุ่งนี้จะทำอะไรต่อ) 
+                    <b>มันไม่ใช่การตามงาน เพราะ ทุกคนเห็นเป้าหลายเดียวกัน ทุกคนบอกว่าจะต้องทำให้มันเสร็จในเวลาเท่ากัน อีกคนติดปัญหาอีกคนต้องเข้าไปช่วย</b>
+                </li>
+                <li>แต่ Scrum ไม่มีหัวหน้า scrum มีmaster ไว้ เพื่อนช่วยกันบอกให้คนช่วยกัน</li>
+                <li>หลักการจริงๆ คือ การทำงานเป็นทีม ทีมมีการคุยกัน และทุคนมีความเชื่อที่ว่า Software ที่ทำจะต้องทำเพื่อให้ใช้งานได้จริง เป็นเรื่องของความเชื่อ เน้นๆ อุดมการ</li>
+                <li>ในจังหว่ะ วางแผน ขั้น 2 จะมีหลายวิธีที่ใช้ได้</li>
+                <li>เมื่อทำเสร็จจะเกิด Software ที่ใช้งานได้จริง Protentially Shippable product</li>
+                <li>Sprint Review meeting เป็นการประชุมอีกครั้ง หลัง product ออกมา ดูว่าความต้องการถูกไหม</li>
+                <li>Retrospective กลับมาทบทวนว่าอะไรที่ดีเอามาใช้ได้ อะไรไม่ดี ก็ จดไว้ไม่ใช้ คือการทบทวน คล้ายๆ PDCA (plan do chack at) = อะไรดีก็ไม่ใช้อะไรไม่ดีก็ไม่ใช้เอามาปลับปรุงตัวเอง</li>
+                <li>ตอน meeting ยืนคุย เมื่ยจะได้รีบกลับไปทำงานเดียวนาน การ meeting ไม่ใช่การแก้ปัญหา แต่เป็นการเอาปัญหามากบอก </li>
+                <li>meeting จะมี to do กับ done(เสร็จแล้ว)แต่เสร็จแต่ใหนคือเสร็จ software ถ้าทำแล้วไม่ส่งให้ user ใช้ก็เหมือนไม่ได้ทำ</li>
+                <a href="./img/2.png"><img src="./img/2.png" width="200"></a>
+            </div>
+            <div class="col-sm-6">
+                <h1>KPI</h1>
+                <p>Key
+                        Performance Indicator
+                        KPI 
+                        คือ เครื่องมือที่ใช้วัดผลการด าเนินงานหรื
+                        อประเมินผลการด าเนินงานในด้านต่างๆ</p>
+                <p>จะมีความผิดพลาดในการส่ง software ของ programer ต้องข้อนข้างน้อย</p>
+            </div>
+            <div class="col-sm-6" style="color:red;">ใครทำใครได้ 
+                <li>ถ้าเราไม่ทำเพราะคิดว่าเสียเปรี่ยบ หัวหน้าเค้าเห็นแค่ว่าลูกน้องทำงานหรือไม่</li>
+                <li>เราไม่ทำก็ไม่ได้งาน</li>
+                <li>คิดแบบนี้ก็เป็นทุกข์ เห็นคนใหนไม่เก่งก็ เข้าไปช่วยให้เค้าดีขึ้น ก็ทำให้ทีมดีขึ้น</li>
+            </div>
+            <div class="col-sm-12">
+                <h1>หลังสือ KEEP LEARNING 
+                    <a href="http://www.somkiat.cc/">somkiet.cc</a><br>
+                    หนังสือ สิ่งที่นักพัฒนา software ควรใช้ 20 อย่าง </h1>
+                <h1>ของบางอย่างต้องลองทำ ไม่ลองทำ ก็ทำไม่ได้</h1>
+                <h1>ผมเป็น footer ครับ /อันติอาจาร/คนแพ้มองแต่ปัญหา คนชนะมองหาทางออก</h1>
+            </div>
+        </div>
+        
+    </body>
+</html>
