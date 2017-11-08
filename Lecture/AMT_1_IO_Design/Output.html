@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .bgHead,.footer{
+                background-color: #006889;
+                color: white;
+                height: 70px;
+            }
+            .Bo{
+                border: 1px rgb(143, 143, 143) solid;
+            }
+            
+        </style>
+    </head>
+    <body class="">
+        <div class="container Bo">
+            
+            <div class="row">
+                <div class="col-sm-12 bgHead"><h1>Output</h1></div>
+                <div class="col-sm-4">
+                    
+                    <h1>Output</h1>
+                    <p>ส่วนใหญ่จะเป็นพวก หน้าจอ
+                        <br>หน้าจอส่วนใหญ่ต้องนำข้อมูลมาแสดง
+                        <br>แต่ ข้อมูลที่นำมาแสดงจะขึ้นอยู่กับ Actor ว่า Actor นั้นๆ ควรเห็นอะไร
+                        
+                    </p>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <h2>ประเภท output</h2>
+                    <ul>
+                        <li>hardcopy : พวกกระดาษ</li>
+                        <li>softcopy : file</li>
+                    </ul>
+                    <i>การออกแบบ output ยากตรงที่ว่าใครจะดูแล้วเค้าจะดูในรูปแบบอะไร ต้องตอบโจทย์เค้า<i>
+                        
+                    </div>
+                    <div class="col-sm-4">
+                        <h1>การออกแบบ output</h1>
+                        <p>
+                            เราก็ไปขอเอกสารเค้ามาที่เค้าใช้ทุกวัน มาสร้างเป็น output <br>
+                            <i>(มันจะมี user แบบอยากเห็นสรุปแต่ไม่พิมรายระเอียด)</i> เราก็ต้องดูรายงานว่าข้อมูลนั้นๆ เราเก็บไปหรือยัง<br>
+                            *มันจะวนกลับไปกลับมา*
+                        </p>
+                        <h4>TIP</h4>
+                        <p>output ต้องตอบโจทย์องกร บรรุวัตถุประสงองกร <i>(การออกแบบ ตาม แพทฟอมเป็นแค่ตัวเลือก)</i></p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>ตัวอย่าง</h2>
+                        <p>มหาวิทยาลัยบูรพา มีเป้าหมายคือ ผลิตบันดิท ที่มีคุณภาพ ต่อสังคม เค้าก็ต้องการจะเห็นอัตรานิสิตจบได้งาน</p>
+                        <ul>
+                            <li>จริงๆ แล้ว User เค้าไม่รู้หลอกว่าเค้าต้องการอะไร จนกว่าเค้าจะได้ลองใช้</li>
+                            <li>เราก็จะเจอคนที่ รอออกแบบสมบูรแล้วค่อยทำ <i>จริงๆแล้วเป็นไปไม่ได้</i></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm-8">
+                        <h1>External Output</h1>
+                        <p><i>ออกไปให้คนนอกองกรเห็น</i></p>
+                        <p>คือ อะไรที่ส่งออกไปข้างนอก คือ External Output เช่น</p>
+                        <ul>
+                            <li>Utility bills</li>
+                            <li>Advertisements :โฆษนา</li>
+                            <li>Payment : เช็ค</li>
+                        </ul>
+                        <h1>Internal Output</h1>
+                        <p><i>ใช้กันในองกรพวก รายงานบางอย่าง เช่นยอดขาย</i></p>
+                        <ul>
+                            <li>Summary report : อะไรที่เกิดการบวกลบคูนหาร รวม</li>
+                            <li>Detailed report : ต้องการดูรายระเอียด เช่น user ต้องตรวจสอบสิ่งที่เค้า Key เข้าไปได้ <br><i>(ต้องทีรายระเอียด Summary จะตามมา)</i></li>
+                            <li>Historcal report : ประหวัติ ต้องเลือกช่วงข้อมูลได้ เช่น ระบบทะเบียน Reg มีข้อมูล 5 ล้านแถว 38-60 แล้วมันจะมี filed นึงเก็บปี เพื่อเอาไว้ select เพราะ เวลาเลือกเราจะเจอข้อมูลแน่ๆ 
+                                กะไม่ให้เจอ Not Found (แล้วแต่เทคนิค) อารมแบบ จริงๆมีข้อมูล 5ล้านแถว เลยเก็บแยกปี เช่น สร้างตารางปี แล้ว ทำ reation กับ user เพื่อเก็บแยกกัน ไม่ให้ 5 ล้านแถวมารวมกัน เพราะเวลา select จะต้องเลือก จาก 5 ล้าน แต่เปรี่ยนเป็นเลือกจากปีแทน</li>
+                            <li>Exception report : คือ การงานสิ่งผิดปกติ เช่นคนไม่จ่างเงิน , หนังสือขายดีผิดปกติ <br>
+                                <i>(ก็แล้วแต่ที่เราสนใจ)</i></li>
+                        </ul>
+                        <p>เช่น ตัวอย่าง พนักงาน 7-11 เค้าเลิกกะ ต้องพิม report ตัวใหน มันคือ ยอดขาย = <b>Summary report</b></p>
+                        <p>เช่น บริษัท มีพนักงาน 30 คน ทำ ot 10 เค้าต้องการดู คนทำ ot เราควรแสดง หมด 30 คน (เพื่อใม่ให้ข้อมูลหาย)</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <h1>วิธีแยก report</h1>
+                        <ul>Summary report : คือรวมมาแล้ว</ul>
+                    </div>
+                    <div class="col-sm-7">
+                        <h1>Green IT</h1>
+                        <p>คือเช่น ค่าประกาศในการประชุม 1 ปี ซื้อ BM ได้ 1 คัน</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <h1>คำคมอาจาร</h1>
+                        <ul>
+                            <li>อย่าไปหวังว่า user จะบอกเราได้ว่าเค้าต้องการอะไรตั้งแต่แรก</li>
+                            <li>คำสั่ง SQL จะทำอะไรง่ายๆ ได้ แต่ แต่ละ DBMS จะมี option ยากๆ เป็นของตัวเอง</li>
+                            <li>ศัพท์ turnaround report พวกค่าน้ำค่าไฟ ปริ้นไป เค้าต้องเอากลับมาจ่ายอยู่ดี</li>
+                            <li>ศัพท์ Creet Stupit : คนโง่ก็ใช้ได้</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12">
+                        <h1>สรุป</h1>
+                        <ul>
+                            <li>
+                                report มันคือการเอาข้อมูลมาแสดงเป็นตัวอักษร
+                            </li>
+                            <li>Summary report : แสดงข้อมูลรวมเป็นแถวๆ สิ่งที่แสดงออกมาต้องตรงความต้องการของ User</li>
+                            <li>การออกแบบหน้าจอ บางที่เราก็ไม่รู้ว่าต้องป้อนอะไร แปลว่าเราขาดคำอธิบาย</li>
+                            <li>การออกแบบเราต้องคำนึงถึง UX เราเป็นคนสร้างเราก็รู้ว่ามันใช้ง่าย</li>
+                            <li>คีข้อมูลให้ถูกต้อง และ ข้อมูลต้องเข้า DB ได้ถูกต้องด้วย</li>
+                            <li>การออก แบบ input ต้อง คำนึงถึง User ไม่ให้เค้าเข้าใจผิด (ให้คนอื่นช่วย Test )</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 footer"><h1>Date: 25/ตุลา/2560 </h1></div>    
+                </div>
+                
+            </div>
+                
+            </body>
+            </html>
